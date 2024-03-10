@@ -1,0 +1,338 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 150%;
+    background-color: #f9f9f9;
+}
+
+*:focus {
+    border: 3px solid black;
+}
+
+.skip-to-main {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    transition: 1s ease-out;
+    border-radius: 15px;
+    background-color: #aeb7aa;
+}
+
+.skip-to-main:focus {
+    position: absolute;
+    top: 10px;
+    border: 3px solid white;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #aeb7aa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 125%;
+}
+
+.navigation-bar > li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.navigation-bar li:hover {
+    background-color: #2a470d;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.selected-tab {
+    background-color: #2a470d;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.subtabs {
+    display: none;
+}
+
+header p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 350%;
+    font-variant: small-caps;
+    text-align: center;
+    padding: 10%;
+    background-color: #2a470d;
+    color: #FFFFFF;
+    line-height: 125%;
+}
+
+.page-intro {
+    font-style: italic;
+    text-align: center;
+    margin: auto 10% 5% 10%
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 275%;
+    text-align: center;
+    padding: 5%;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    padding: 1%;
+    font-style: italic;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 125%;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 100%;
+    text-decoration: underline;
+}
+
+main ul {
+    list-style-type: circle;
+    margin-left: 5%;
+}
+
+main ol {
+    list-style-type: decimal;
+    margin-left: 5%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 90%;
+    line-height: 100%;
+}
+
+.preview {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-around;
+    grid-gap: 2%;
+    margin: 5%;
+}
+
+.preview h2 {
+    grid-column: 1 / span 2;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.pet-intro {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: space-around;
+    grid-gap: 2%;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.pet-intro h2 {
+    grid-column: 1 / span 1;
+    margin-bottom: 2%;
+}
+
+.pet-preferences {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    margin: 10% 5% 10%;
+    grid-gap: 2%;
+}
+
+.pet-gallery {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin: 10px;
+    grid-gap: 2%;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.pet-gallery h3 {
+    grid-column: 1 / span 2;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+
+.recipe-intro {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto;
+    align-items: start;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 10%;
+    grid-gap: 2%;
+
+}
+
+.recipe-intro h2 {
+    grid-column: 1 / span 2;
+    margin-bottom: 2%;
+}
+
+.recipe-ingredients {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto auto;
+    align-items: start;
+    justify-content: start;
+    margin: 5%;
+    grid-gap: 2%;
+}
+
+.recipe-ingredients h3 {
+    grid-column: 1 / span 2;
+    margin-bottom: 2%;
+}
+
+.recipe-ingredients {
+    margin-top: 7%;
+}
+
+.recipe-directions {
+    margin: 5%;
+}
+
+.travel-entry {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: auto;
+    align-items: start;
+    justify-content: start;
+    grid-gap: 2%;
+    margin: auto 5% 10% 5%;
+}
+
+.travel-entry h2 {
+    grid-column: 1 / span 1;
+    margin-bottom: 2%;
+}
+
+footer {
+    margin: 20% 5% 2%;
+}
+
+@media screen and (min-width: 768px) {
+    .subtabs {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #838e7d;
+        text-align: center;
+        font-style: italic
+    }
+
+    .recipe-ingredients {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .recipe-ingredients h3 {
+        grid-column: 1;
+        margin-bottom: 2%;
+    }
+
+    .recipe-ingredients h4 {
+        margin-top: 5%;
+    }
+
+    .recipe-directions {
+        display: block;
+        text-align: center;
+    }
+
+    .recipe-directions ol {
+        text-align: center;
+    }
+
+    .recipe-directions h4 {
+        margin-top: 5%;
+    }
+
+    main ul, main ol{
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+}
+
+@media screen and (min-width: 950px) {
+    .navigation-bar {
+        flex-direction: row;
+    }
+
+    .pet-intro {
+        grid-template-columns: auto auto;
+    }
+
+    .pet-intro h2 {
+        grid-column: 1 / span 2;
+        margin-bottom: 2%;
+    }
+
+    .pet-preferences {
+        margin: 2% 5%;
+    }
+
+    .pet-gallery {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .pet-gallery h3 {
+        grid-column: 1 / span 4;
+    }
+
+    .recipe-intro {
+        grid-template-columns: auto auto;
+    }
+
+    .recipe-intro h2 {
+        grid-column: 1 / span 2;
+        margin-bottom: 2%;
+    }
+
+    .travel-entry {
+        grid-template-columns: auto auto;
+        margin: 5% 10% 0 5%
+    }
+
+    .travel-entry h2 {
+    grid-column: 1 / span 2;
+    }
+
+    footer {
+        margin: 20% 2% 2%; ;
+    }
+
+}
+
+
+
