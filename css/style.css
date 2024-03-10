@@ -47,14 +47,14 @@ main a {
     font-size: 125%;
 }
 
-.navigation-bar > li {
+.navigation-bar > div {
     list-style-type: none;
     padding: 10px;
     text-align: center;
     flex: 1;
 }
 
-.navigation-bar li:hover {
+.navigation-bar div:hover {
     background-color: #2a470d;
     color: #FFFFFF;
     cursor: pointer;
