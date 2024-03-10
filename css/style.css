@@ -47,14 +47,14 @@ main a {
     font-size: 125%;
 }
 
-.navigation-bar > div {
+.navigation-bar > li {
     list-style-type: none;
     padding: 10px;
     text-align: center;
     flex: 1;
 }
 
-.navigation-bar div:hover {
+.navigation-bar li:hover {
     background-color: #2a470d;
     color: #FFFFFF;
     cursor: pointer;
@@ -259,12 +259,11 @@ footer {
 @media screen and (min-width: 768px) {
     .subtabs {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
         justify-content: space-around;
-        background-color: #838e7d;
         text-align: center;
-        font-style: italic
+        font-style: italic;
+        font-size: smaller;
+        line-height: 50%;
     }
 
     .pet-intro {
